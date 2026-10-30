@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Racing · Burnaby Velodrome Club · Design preview</title>
+<link rel="icon" href="assets/mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#F6F4EF;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+a{color:#005D84}a:hover{color:#0B1B2B}
+.wrap{width:100%;max-width:1320px;margin:0 auto;padding-left:clamp(16px,4vw,56px);padding-right:clamp(16px,4vw,56px)}
+.disp{font-family:'Archivo',system-ui,sans-serif;font-stretch:125%;font-weight:800;font-style:italic;text-transform:uppercase;letter-spacing:-0.012em;line-height:.88;margin:0}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace;text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:500}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:0 26px;border-radius:999px;font-family:'Archivo',sans-serif;font-weight:700;font-size:16px;text-decoration:none;white-space:nowrap;transition:transform .2s ease,background-color .2s ease,border-color .2s ease,color .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn .arw{transition:transform .2s ease}.btn:hover .arw{transform:translateX(4px)}
+.btn-y{background:#F6B221;color:#0B1B2B}.btn-y:hover{background:#FFC53D;color:#0B1B2B}
+.btn-r{background:#D12A2F;color:#fff}.btn-r:hover{background:#B81F24;color:#fff}
+.btn-n{background:#005D84;color:#fff}.btn-n:hover{background:#004666;color:#fff}
+.btn-k{background:#0B1B2B;color:#fff}.btn-k:hover{background:#1B3550;color:#fff}
+.btn-gw{border:1.5px solid rgba(255,255,255,.4);color:#fff}.btn-gw:hover{border-color:#fff;color:#fff}
+.btn-gi{border:1.5px solid rgba(11,27,43,.25);color:#0B1B2B}.btn-gi:hover{border-color:#0B1B2B;color:#0B1B2B}
+.navlinks a{color:rgba(255,255,255,.86);text-decoration:none;font-weight:500;font-size:15px;transition:color .2s}
+.navlinks a:hover{color:#F6B221}
+@media (max-width: 1020px){.navlinks{display:none !important}}
+@media (max-width: 560px){.hide-sm{display:none !important}}
+.chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:999px;border:1px solid rgba(255,255,255,.24);color:#fff;text-decoration:none;font-weight:600;font-size:15px;transition:background-color .2s,border-color .2s,color .2s}
+.chip:hover{background:#fff;color:#0B1B2B;border-color:#fff}
+.tag{display:inline-flex;align-items:center;min-height:36px;padding:0 14px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#fff;font-size:14px;font-weight:600}
+.ev{display:flex;flex-direction:column;gap:14px;text-decoration:none;color:#0B1B2B;background:#fff;border:1px solid #E2DED5;border-radius:24px;padding:28px;transition:transform .25s ease,box-shadow .25s ease}
+.ev:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(11,27,43,.12);color:#0B1B2B}
+.rec{width:100%;border-collapse:collapse;font-size:15px}
+.rec th{text-align:left;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7F8E9C;padding:0 12px 12px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.rec td{padding:14px 12px 14px 0;border-bottom:1px solid rgba(255,255,255,.1);color:#D5DEE6;vertical-align:top}
+.rec td.t{font-family:'JetBrains Mono',monospace;color:#F6B221;font-weight:600;white-space:nowrap}
+.rec td.e{color:#fff;font-weight:600;white-space:nowrap}
+.rec .m{display:block;color:#7F8E9C;font-size:12px;margin-top:3px}
+.tile{display:flex;flex-direction:column;justify-content:space-between;gap:28px;min-height:170px;padding:26px;border-radius:22px;border:1px solid #E2DED5;background:#fff;text-decoration:none;color:#0B1B2B;transition:background-color .2s,color .2s}
+.tile:hover{background:#0B1B2B;color:#fff}
+.flink{color:#C9D3DC;text-decoration:none;font-size:15px;line-height:2.1}
+.flink:hover{color:#F6B221}
+</style>
+</head>
+<body>
+<div style="background:#000;color:#F6B221;text-align:center;font:600 11px/1.4 'JetBrains Mono',monospace;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px">Design preview · not the live site · <a href="https://burnabyvelodrome.ca" style="color:#fff">burnabyvelodrome.ca</a></div>
+<div style="width: 100%; min-height: 100vh; background: #F6F4EF; font-family: 'Archivo', system-ui, sans-serif; color: #0B1B2B">
+
+<section style="position: relative; overflow: hidden; background: #0B1B2B; color: #fff">
+<img src="assets/hero.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 30%; opacity: .55">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,27,43,.97) 0%, rgba(11,27,43,.85) 40%, rgba(11,27,43,.45) 100%)"></div>
+<header style="position: relative; z-index: 3">
+<div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 92px">
+<a href="index.html" aria-label="Burnaby Velodrome Club home" style="display: flex; align-items: center; text-decoration: none">
+<img src="assets/wordmark.png" alt="Burnaby Velodrome Club" style="height: clamp(44px, 4.4vw, 62px); width: auto; max-width: 64vw; display: block">
+</a>
+<nav class="navlinks" aria-label="Main" style="display: flex; gap: 34px">
+<a href="about.html">About</a>
+<a href="programs.html">Programs</a>
+<a href="racing.html" aria-current="page" style="color: #F6B221">Racing</a>
+<a href="#">Schedule</a>
+<a href="rider-guide.html">Rider guide</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 10px">
+<a href="member-hub.html" class="btn btn-gw hide-sm" style="min-height: 44px; padding: 0 20px; font-size: 15px">Member hub</a>
+<a href="#" class="btn btn-r" style="min-height: 44px; padding: 0 22px; font-size: 15px">Donate</a>
+</div>
+</div>
+</header>
+<div class="wrap" style="position: relative; z-index: 2; padding-top: clamp(48px, 7vw, 96px); padding-bottom: 160px">
+<div class="mono" style="display: inline-flex; align-items: center; gap: 12px; color: #F6B221; font-size: 13px"><span aria-hidden="true" style="width: 32px; height: 2px; background: #F6B221"></span>Racing</div>
+<h1 class="disp" style="font-size: clamp(40px, 8vw, 124px); margin-top: 28px"><span style="display: block; color: #fff">Race</span><span style="display: block; color: #F6B221">with us</span></h1>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 32px; margin-top: 40px">
+<p style="flex: 1 1 440px; max-width: 580px; margin: 0; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5; color: #D5DEE6">Weeknight club racing, weekend meets, and the occasional international-calibre event, grouped by experience and ability. Come to race, or come to watch.</p>
+<nav aria-label="On this page" style="display: flex; flex-wrap: wrap; gap: 10px; flex: 0 1 600px; justify-content: flex-end">
+<a href="#friday-night-racing" class="chip">Friday Night Racing</a>
+<a href="#bare-bones" class="chip">Bare Bones</a>
+<a href="#bvc-mania" class="chip">BVC Mania</a>
+<a href="#track-records" class="chip">Track records</a>
+<a href="#race-centre" class="chip">Results + photos</a>
+</nav>
+</div>
+</div>
+<div aria-hidden="true" style="position: absolute; left: -5%; right: -5%; bottom: 46px; z-index: 1; transform: rotate(-1.6deg); transform-origin: left center; display: flex; flex-direction: column; gap: 7px">
+<div style="height: 14px; background: #3BB0C9; border-radius: 0 999px 999px 0; width: 78%"></div>
+<div style="height: 3px; background: rgba(255,255,255,.75); width: 84%; border-radius: 0 999px 999px 0"></div>
+<div style="height: 6px; background: #D12A2F; width: 90%; border-radius: 0 999px 999px 0"></div>
+<div style="height: 6px; background: #F6B221; width: 70%; border-radius: 0 999px 999px 0"></div>
+</div>
+</section>
+
+<section style="padding: clamp(72px, 8vw, 112px) 0 0">
+<div class="wrap">
+<div class="mono" style="color: #005D84">On the calendar</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 24px">
+<a href="#friday-night-racing" class="ev">
+<div style="display: flex; justify-content: space-between; gap: 12px"><span class="mono" style="color: #005D84">Weekly</span><span class="mono" style="color: #4A5866">Oct → Mar</span></div>
+<div class="disp" style="font-size: 34px">Friday Night<br>Racing</div>
+<p style="margin: 0; color: #4A5866; font-size: 16px; line-height: 1.5">Two to three races a night across four categories. Racing usually starts at 7:00 pm.</p>
+<span style="margin-top: auto; font-weight: 700; color: #005D84">Details →</span>
+</a>
+<a href="#bare-bones" class="ev" style="background: #0B1B2B; color: #fff; border-color: #0B1B2B">
+<div style="display: flex; justify-content: space-between; gap: 12px"><span class="mono" style="background: #3BB0C9; color: #0B1B2B; padding: 5px 10px; border-radius: 999px; font-size: 10px; font-weight: 600">Registration open</span><span class="mono" style="color: #F6B221">Nov 6–8</span></div>
+<div class="disp" style="font-size: 34px">Bare Bones<br><span style="color: #3BB0C9">2026</span></div>
+<p style="margin: 0; color: #C9D3DC; font-size: 16px; line-height: 1.5">A weekend of no-fluff racing and a chance to try every event.</p>
+<span style="margin-top: auto; font-weight: 700; color: #F6B221">Details →</span>
+</a>
+<a href="#bvc-mania" class="ev">
+<div style="display: flex; justify-content: space-between; gap: 12px"><span class="mono" style="color: #B81F24">Race weekend</span><span class="mono" style="color: #4A5866">Dec 5–7</span></div>
+<div class="disp" style="font-size: 34px">BVC<br>Mania 2</div>
+<p style="margin: 0; color: #4A5866; font-size: 16px; line-height: 1.5">A high-energy weekend in pursuit of the coveted champion's belt.</p>
+<span style="margin-top: auto; font-weight: 700; color: #005D84">Details →</span>
+</a>
+</div>
+</div>
+</section>
+
+<section id="friday-night-racing" style="padding: clamp(88px, 10vw, 144px) 0">
+<div class="wrap">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 32px">
+<div>
+<div class="mono" style="color: #005D84">01 · The weekly series</div>
+<h2 class="disp" style="font-size: clamp(36px, 6.4vw, 100px); margin-top: 20px">Friday Night<br><span style="color: #005D84">Racing</span></h2>
+</div>
+<div style="flex: 0 1 520px">
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #33424F">The best way to build track racing experience. Fall racing runs October to December, winter racing January to March, with a short break from mid-December to mid-January.</p>
+<p style="margin: 14px 0 0; font-size: 16px; color: #4A5866">Spectators always welcome.</p>
+</div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0; margin-top: 56px; border-top: 2px solid #0B1B2B">
+<div style="padding: 24px 24px 24px 0; border-bottom: 1px solid #DDD8CD"><div class="disp" style="font-size: 56px">7:00<span style="font-size: 22px; color: #005D84"> pm</span></div><div class="mono" style="color: #4A5866; margin-top: 12px">Typical start</div></div>
+<div style="padding: 24px 24px 24px 0; border-bottom: 1px solid #DDD8CD"><div class="disp" style="font-size: 56px">4</div><div class="mono" style="color: #4A5866; margin-top: 12px">Categories</div></div>
+<div style="padding: 24px 24px 24px 0; border-bottom: 1px solid #DDD8CD"><div class="disp" style="font-size: 56px">2–3</div><div class="mono" style="color: #4A5866; margin-top: 12px">Races per night</div></div>
+<div style="padding: 24px 0; border-bottom: 1px solid #DDD8CD"><div class="disp" style="font-size: 56px">26/27</div><div class="mono" style="color: #4A5866; margin-top: 12px">Current season</div></div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px">
+<div style="flex: 1.4 1 520px; min-width: 0; background: #0B1B2B; color: #fff; border-radius: 28px; padding: clamp(24px, 4vw, 40px)">
+<div class="mono" style="color: #F6B221">Categories</div>
+<div style="margin-top: 20px; display: flex; flex-direction: column">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.14)"><span class="disp" style="flex: 0 0 120px; font-size: 26px; color: #3BB0C9">Novice</span><span style="flex: 1 1 260px; color: #D5DEE6; font-size: 15px; line-height: 1.55">Every new racer starts here. A BVC coach directs these races and moves riders up to C by evaluation, not results.</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.14)"><span class="disp" style="flex: 0 0 120px; font-size: 26px; color: #F6B221">C</span><span style="flex: 1 1 260px; color: #D5DEE6; font-size: 15px; line-height: 1.55">Masters, juniors, some youth and Elite 4–5. Gear limit 86" under 45, 92" over 45.</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.14)"><span class="disp" style="flex: 0 0 120px; font-size: 26px; color: #F47A6F">B</span><span style="flex: 1 1 260px; color: #D5DEE6; font-size: 15px; line-height: 1.55">Juniors, Elite 3–4, masters and women. No gear limit.</span></div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.14); border-bottom: 1px solid rgba(255,255,255,.14)"><span class="disp" style="flex: 0 0 120px; font-size: 26px; color: #fff">A</span><span style="flex: 1 1 260px; color: #D5DEE6; font-size: 15px; line-height: 1.55">Elite 1–2, Elite 1 track women, fast masters and fast juniors. No gear limit.</span></div>
+</div>
+<div class="mono" style="color: #7F8E9C; margin-top: 28px">Race formats · any three a night</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px">
+<span class="tag">Scratch</span><span class="tag">Tempo</span><span class="tag">Elimination</span><span class="tag">Points</span><span class="tag">Snowball</span><span class="tag">Belgian Miss and Out</span><span class="tag">Win and Out</span>
+</div>
+</div>
+<div style="flex: 1 1 360px; min-width: 0; background: #FFFFFF; border: 1px solid #E2DED5; border-radius: 28px; padding: clamp(24px, 4vw, 40px); display: flex; flex-direction: column">
+<div class="mono" style="color: #005D84">How to race</div>
+<ol style="list-style: none; margin: 20px 0 0; padding: 0; display: flex; flex-direction: column">
+<li style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #E2DED5"><span class="disp" style="font-size: 26px; color: #005D84; flex: 0 0 30px">1</span><span style="font-size: 16px; line-height: 1.5">Get a BVC membership</span></li>
+<li style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #E2DED5"><span class="disp" style="font-size: 26px; color: #005D84; flex: 0 0 30px">2</span><span style="font-size: 16px; line-height: 1.5">Hold a Cycling BC licence or your provincial membership</span></li>
+<li style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #E2DED5"><span class="disp" style="font-size: 26px; color: #005D84; flex: 0 0 30px">3</span><span style="font-size: 16px; line-height: 1.5">Buy a race pass or drop-in on <strong>Uplifter</strong></span></li>
+<li style="display: flex; gap: 16px; padding: 16px 0; border-top: 1px solid #E2DED5; border-bottom: 1px solid #E2DED5"><span class="disp" style="font-size: 26px; color: #005D84; flex: 0 0 30px">4</span><span style="font-size: 16px; line-height: 1.5">RSVP on <strong>Spond</strong> for each race night</span></li>
+</ol>
+<p style="margin: 18px 0 0; color: #4A5866; font-size: 14px; line-height: 1.55">Sort all of this before you arrive. Be in staging before the race on track finishes. Got numbers from last year? Bring them.</p>
+<a href="member-hub.html" class="btn btn-n" style="margin-top: auto; align-self: flex-start">Get race-ready <span class="arw" aria-hidden="true">→</span></a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="bare-bones" style="background: #000000; color: #fff; padding: clamp(88px, 10vw, 144px) 0; position: relative; overflow: hidden">
+<div aria-hidden="true" class="disp" style="position: absolute; right: -2%; top: 40px; font-size: clamp(120px, 22vw, 340px); color: transparent; -webkit-text-stroke: 1.5px rgba(209,42,47,.35); line-height: .8; white-space: nowrap">BB26</div>
+<div class="wrap" style="position: relative">
+<div class="mono" style="color: #D12A2F">02 · November 6–8, 2026</div>
+<h2 class="disp" style="font-size: clamp(48px, 7.4vw, 116px); margin-top: 20px">Bare<br><span style="color: #D12A2F">Bones</span></h2>
+<div style="display: flex; flex-wrap: wrap; gap: 32px; margin-top: 40px; align-items: flex-start">
+<div style="flex: 1 1 460px; min-width: 0">
+<p style="margin: 0; font-size: 20px; line-height: 1.55; color: #E4EAF0">A grassroots weekend of no-fluff racing that draws riders from all over. Endurance omnium, sprint tournament, timed events and clinics: a chance to try every event.</p>
+<div class="ph" style="margin-top: 32px; aspect-ratio: 16 / 9; border-radius: 22px; background-color: #1A1A1A; background-image: repeating-linear-gradient(-28deg, rgba(255,255,255,.04) 0 2px, transparent 2px 22px); display: flex; align-items: center; justify-content: center"><span class="mono" style="font-size: 11px; color: #9A9A9A; letter-spacing: .1em">[Logo] Bare Bones 2026 chainring skull</span></div>
+</div>
+<div style="flex: 0 1 420px; min-width: 280px; border: 1px solid rgba(255,255,255,.18); border-radius: 24px; padding: 32px; background: rgba(255,255,255,.03)">
+<div style="display: flex; align-items: center; gap: 12px"><span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 50%; background: #D12A2F; box-shadow: 0 0 0 5px rgba(209,42,47,.25)"></span><span class="mono" style="color: #fff">Pre-registration only</span></div>
+<p style="margin: 16px 0 0; color: #C9C9C9; font-size: 16px; line-height: 1.55">No on-site or cash registration. Register on Uplifter before race weekend.</p>
+<a href="#" class="btn btn-r" style="margin-top: 24px; width: 100%">Register on Uplifter <span aria-hidden="true">↗</span></a>
+<a href="#" class="btn btn-gw" style="margin-top: 12px; width: 100%">Read the technical guide <span aria-hidden="true">↗</span></a>
+<p style="margin: 20px 0 0; color: #9A9A9A; font-size: 14px; line-height: 1.55">Most questions are answered in the technical guide. Anything else, <a href="about.html#contact" style="color: #fff">get in touch</a>.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="bvc-mania" style="background: #FFFFFF; padding: clamp(88px, 10vw, 144px) 0">
+<div class="wrap">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 32px">
+<div>
+<div class="mono" style="color: #B81F24">03 · December 5–7</div>
+<h2 class="disp" style="font-size: clamp(36px, 6.4vw, 100px); margin-top: 20px">BVC<br><span style="color: #D12A2F">Mania 2</span></h2>
+</div>
+<p style="flex: 0 1 520px; margin: 0; font-size: 19px; line-height: 1.6; color: #33424F">Three days of sprint and endurance omniums on a 200 m track that's steeper than most, all in pursuit of the coveted champion's belt.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 56px">
+<div style="border-radius: 24px; padding: 30px; background: #F6F4EF">
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span class="disp" style="font-size: 30px; font-style: normal">Friday</span><span class="mono" style="color: #4A5866">Dec 5</span></div>
+<ul style="list-style: none; margin: 22px 0 0; padding: 0"><li style="padding: 14px 0; border-top: 1px solid #DDD8CD; font-size: 16px"><span class="mono" style="display: block; color: #1C7A90; font-size: 10px; margin-bottom: 4px">All riders</span>Track practice</li></ul>
+</div>
+<div style="border-radius: 24px; padding: 30px; background: #F6F4EF">
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span class="disp" style="font-size: 30px; font-style: normal">Saturday</span><span class="mono" style="color: #4A5866">Dec 6</span></div>
+<ul style="list-style: none; margin: 22px 0 0; padding: 0">
+<li style="padding: 14px 0; border-top: 1px solid #DDD8CD; font-size: 16px"><span class="mono" style="display: block; color: #B81F24; font-size: 10px; margin-bottom: 4px">Sprint Omnium · Day 1</span>Flying 200s and Match Sprint</li>
+<li style="padding: 14px 0; border-top: 1px solid #DDD8CD; font-size: 16px"><span class="mono" style="display: block; color: #005D84; font-size: 10px; margin-bottom: 4px">Endurance Omnium</span>A / B</li>
+<li style="padding: 14px 0; border-top: 1px solid #DDD8CD; font-size: 16px"><span class="mono" style="display: block; color: #1C7A90; font-size: 10px; margin-bottom: 4px">Novice Women</span>Scratch and Points</li>
+</ul>
+</div>
+<div style="border-radius: 24px; padding: 30px; background: #0B1B2B; color: #fff">
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span class="disp" style="font-size: 30px; font-style: normal">Sunday</span><span class="mono" style="color: #F6B221">Dec 7</span></div>
+<ul style="list-style: none; margin: 22px 0 0; padding: 0">
+<li style="padding: 14px 0; border-top: 1px solid rgba(255,255,255,.14); font-size: 16px"><span class="mono" style="display: block; color: #F47A6F; font-size: 10px; margin-bottom: 4px">Sprint Omnium · Day 2</span>500 m Time Trial and Keirin</li>
+<li style="padding: 14px 0; border-top: 1px solid rgba(255,255,255,.14); font-size: 16px"><span class="mono" style="display: block; color: #3BB0C9; font-size: 10px; margin-bottom: 4px">Endurance Omnium</span>C / D / Women</li>
+<li style="padding: 14px 0; border-top: 1px solid rgba(255,255,255,.14); font-size: 16px"><span class="mono" style="display: block; color: #F6B221; font-size: 10px; margin-bottom: 4px">Finale</span>Champion's belt</li>
+</ul>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px">
+<a href="#" class="btn btn-k">Race bible <span aria-hidden="true">↗</span></a>
+<a href="#" class="btn btn-gi">Live schedule <span aria-hidden="true">↗</span></a>
+<a href="#" class="btn btn-gi">Results <span aria-hidden="true">↗</span></a>
+</div>
+</div>
+</section>
+
+<section id="track-records" style="background: #0B1B2B; color: #fff; padding: clamp(88px, 10vw, 144px) 0">
+<div class="wrap">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 32px">
+<div>
+<div class="mono" style="color: #3BB0C9">04 · Fastest on our boards</div>
+<h2 class="disp" style="font-size: clamp(36px, 6.4vw, 100px); margin-top: 20px; color: #F6B221">Track<br><span style="color: #fff">records</span></h2>
+</div>
+<div style="flex: 0 1 440px">
+<div class="mono" style="color: #7F8E9C">Headline record · Flying 200 m</div>
+<div style="display: flex; align-items: baseline; gap: 16px; margin-top: 12px"><span class="disp" style="font-size: clamp(56px, 6vw, 88px); font-style: normal; font-family: 'JetBrains Mono', monospace; letter-spacing: -0.03em">10.579</span><span class="mono" style="color: #F6B221">sec</span></div>
+<div style="color: #C9D3DC; font-size: 15px; margin-top: 8px">Bernard Esterhuizen · 4 Days of Burnaby, 2014</div>
+</div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 540px), 1fr)); gap: 48px 56px; margin-top: 64px">
+<div>
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px"><span aria-hidden="true" style="width: 28px; height: 6px; border-radius: 999px; background: #F6B221"></span><h3 class="disp" style="font-size: 24px; font-style: normal">Elite Men</h3></div>
+<div style="overflow-x: auto"><table class="rec"><thead><tr><th scope="col">Event</th><th scope="col">Time</th><th scope="col">Rider · Meet</th></tr></thead><tbody>
+<tr><td class="e">Flying 200 m</td><td class="t">10.579</td><td>Bernard Esterhuizen<span class="m">4 Days of Burnaby, 2014</span></td></tr>
+<tr><td class="e">Standing 200 m</td><td class="t">16.251</td><td>Mikael Goh<span class="m">Western Challenge, 2020</span></td></tr>
+<tr><td class="e">Standing 1000 m</td><td class="t">1:04.655</td><td>Cam Fitzmaurice<span class="m">BC Provincials, 2023</span></td></tr>
+<tr><td class="e">4 km Pursuit</td><td class="t">4:22.244</td><td>Cam Fitzmaurice<span class="m">BC Provincials, 2023</span></td></tr>
+<tr><td class="e">1 Hour</td><td class="t">48.433 km</td><td>Galen Kehler<span class="m">BVC Timing Event, Sep 2, 2018</span></td></tr>
+</tbody></table></div>
+</div>
+<div>
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px"><span aria-hidden="true" style="width: 28px; height: 6px; border-radius: 999px; background: #3BB0C9"></span><h3 class="disp" style="font-size: 24px; font-style: normal">Elite Women</h3></div>
+<div style="overflow-x: auto"><table class="rec"><thead><tr><th scope="col">Event</th><th scope="col">Time</th><th scope="col">Rider · Meet</th></tr></thead><tbody>
+<tr><td class="e">Flying 200 m</td><td class="t">12.054</td><td>McKenna McKee<span class="m">Western Track Challenge, 2022</span></td></tr>
+<tr><td class="e">Standing 200 m</td><td class="t">18.131</td><td>McKenna McKee<span class="m">Western Track Challenge, 2019</span></td></tr>
+<tr><td class="e">Standing 500 m</td><td class="t">37.138</td><td>Jenna Nestman<span class="m">BC Provincials, 2023</span></td></tr>
+<tr><td class="e">3 km Pursuit</td><td class="t">3:47.821</td><td>Sarah Van Dam<span class="m">Western Track Challenge, 2022</span></td></tr>
+<tr><td class="e">1 Hour</td><td class="t" style="color: #7F8E9C">Open</td><td>Up for grabs<span class="m">No record set</span></td></tr>
+</tbody></table></div>
+</div>
+<div>
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px"><span aria-hidden="true" style="width: 28px; height: 6px; border-radius: 999px; background: #D12A2F"></span><h3 class="disp" style="font-size: 24px; font-style: normal">Junior Men</h3></div>
+<div style="overflow-x: auto"><table class="rec"><thead><tr><th scope="col">Event</th><th scope="col">Time</th><th scope="col">Rider · Meet</th></tr></thead><tbody>
+<tr><td class="e">Flying 200 m</td><td class="t">11.273</td><td>Ethan Ogrodniczuk<span class="m">Western Track Challenge, 2019</span></td></tr>
+<tr><td class="e">Standing 200 m</td><td class="t">17.226</td><td>Ethan Ogrodniczuk<span class="m">Western Track Challenge, 2019</span></td></tr>
+<tr><td class="e">Standing 1000 m</td><td class="t">1:06.213</td><td>Ethan Ogrodniczuk<span class="m">Western Track Challenge, 2019</span></td></tr>
+<tr><td class="e">3 km Pursuit</td><td class="t">3:28.905</td><td>Cam McCallum<span class="m">BC Provincials, 2023</span></td></tr>
+</tbody></table></div>
+</div>
+<div>
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 18px"><span aria-hidden="true" style="width: 28px; height: 6px; border-radius: 999px; background: #fff"></span><h3 class="disp" style="font-size: 24px; font-style: normal">Junior Women</h3></div>
+<div style="overflow-x: auto"><table class="rec"><thead><tr><th scope="col">Event</th><th scope="col">Time</th><th scope="col">Rider · Meet</th></tr></thead><tbody>
+<tr><td class="e">Flying 200 m</td><td class="t">12.397</td><td>Sarah Van Dam<span class="m">Western Track Challenge, 2018</span></td></tr>
+<tr><td class="e">Standing 200 m</td><td class="t">18.131</td><td>McKenna McKee<span class="m">Western Track Challenge, 2019</span></td></tr>
+<tr><td class="e">Standing 500 m</td><td class="t">37.992</td><td>Sarah Van Dam<span class="m">Western Track Challenge, 2018</span></td></tr>
+<tr><td class="e">2 km Pursuit</td><td class="t">2:36.063</td><td>Sarah Van Dam<span class="m">Western Track Challenge, 2018</span></td></tr>
+</tbody></table></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="race-centre" style="padding: clamp(80px, 9vw, 128px) 0">
+<div class="wrap">
+<div class="mono" style="color: #005D84">05 · Race centre</div>
+<h2 class="disp" style="font-size: clamp(40px, 5vw, 76px); margin-top: 20px">Results, photos<br><span style="color: #005D84">+ timing</span></h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; margin-top: 48px">
+<a href="#" class="tile"><span class="mono" style="color: inherit; opacity: .7">Every race night</span><span style="display: flex; justify-content: space-between; align-items: flex-end"><span class="disp" style="font-size: 30px; font-style: normal">Results</span><span aria-hidden="true" style="font-size: 22px">↗</span></span></a>
+<a href="#" class="tile"><span class="mono" style="color: inherit; opacity: .7">Live on the night</span><span style="display: flex; justify-content: space-between; align-items: flex-end"><span class="disp" style="font-size: 30px; font-style: normal">Live timing</span><span aria-hidden="true" style="font-size: 22px">↗</span></span></a>
+<a href="#" class="tile"><span class="mono" style="color: inherit; opacity: .7">From the infield</span><span style="display: flex; justify-content: space-between; align-items: flex-end"><span class="disp" style="font-size: 30px; font-style: normal">Photos</span><span aria-hidden="true" style="font-size: 22px">↗</span></span></a>
+<a href="#" class="tile"><span class="mono" style="color: inherit; opacity: .7">With Cycling BC + Cycling Canada</span><span style="display: flex; justify-content: space-between; align-items: flex-end"><span class="disp" style="font-size: 30px; font-style: normal">Western Track Challenge</span><span aria-hidden="true" style="font-size: 22px">↗</span></span></a>
+</div>
+</div>
+</section>
+
+<footer style="position: relative; overflow: hidden; background: #0B1B2B; color: #fff">
+<div aria-hidden="true" style="display: flex; flex-direction: column; gap: 6px; align-items: flex-end">
+<div style="height: 10px; background: #3BB0C9; width: 58%; border-radius: 999px 0 0 999px"></div>
+<div style="height: 5px; background: #D12A2F; width: 66%; border-radius: 999px 0 0 999px"></div>
+<div style="height: 5px; background: #F6B221; width: 50%; border-radius: 999px 0 0 999px"></div>
+</div>
+<div class="wrap" style="padding-top: 72px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
+<a href="index.html" style="display: flex; align-items: center; gap: 20px; text-decoration: none; color: #fff">
+<img src="assets/mark.png" alt="Burnaby Velodrome Club home" style="height: 72px; width: auto; display: block">
+<span class="disp" style="font-size: 24px; line-height: 1">Together chasing<br><span style="color: #F6B221">greatness</span></span>
+</a>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 28px">
+<a href="rider-guide.html#track-rules" class="flink">Track rules + safety</a>
+<a href="rider-guide.html#faq" class="flink">FAQ</a>
+<a href="about.html#contact" class="flink">Contact us</a>
+<a href="member-hub.html" class="flink">Member hub</a>
+</div>
+</div>
+<div aria-hidden="true" class="disp" style="white-space: nowrap; font-size: clamp(56px, 12.4vw, 200px); color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,.14); margin-top: 72px; padding-left: clamp(16px, 4vw, 56px); line-height: .9">Chasing greatness</div>
+<div class="wrap" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding-top: 28px; padding-bottom: 36px; border-top: 1px solid rgba(255,255,255,.1); margin-top: 8px; color: #8E9CAA; font-size: 13px">
+<span>We acknowledge the financial support of the Province of British Columbia.</span>
+<span>© 1997–2026 Burnaby Velodrome Club</span>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
