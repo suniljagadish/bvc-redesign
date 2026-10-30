@@ -45,7 +45,7 @@ a{color:#005D84}a:hover{color:#0B1B2B}
 <header style="position: relative; z-index: 3">
 <div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 92px">
 <a href="index.html" aria-label="Burnaby Velodrome Club home" style="display: flex; align-items: center; text-decoration: none">
-<img src="assets/wordmark.png" alt="Burnaby Velodrome Club" style="height: 42px; width: auto; max-width: 62vw; display: block">
+<img src="assets/wordmark.png" alt="Burnaby Velodrome Club" style="height: clamp(44px, 4.4vw, 62px); width: auto; max-width: 64vw; display: block">
 </a>
 <nav class="navlinks" aria-label="Main" style="display: flex; gap: 34px">
 <a href="#">About</a>
@@ -61,15 +61,17 @@ a{color:#005D84}a:hover{color:#0B1B2B}
 </div>
 </header>
 
-<div class="wrap" style="position: relative; z-index: 2; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 56px; padding-top: clamp(48px, 7vw, 104px); padding-bottom: 168px">
-<div style="flex: 1 1 560px; min-width: 0">
+<div class="wrap" style="position: relative; z-index: 2; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 48px; padding-top: clamp(48px, 7vw, 104px); padding-bottom: 168px">
+<div style="flex: 1 1 100%; min-width: 0">
 <div class="mono" style="display: inline-flex; align-items: center; gap: 12px; color: #F6B221; font-size: 13px">
 <span aria-hidden="true" style="width: 32px; height: 2px; background: #F6B221"></span>Two platforms, one club</div>
-<h1 class="disp" style="font-size: clamp(56px, 10vw, 156px); margin-top: 28px">
+<h1 class="disp" style="font-size: clamp(44px, 10vw, 150px); margin-top: 28px">
 <span style="display: block; color: #fff">Member</span>
 <span style="display: block; color: #F6B221">Hub</span>
 </h1>
-<p style="font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5; color: #D5DEE6; max-width: 540px; margin: 32px 0 0">Memberships and event registration run on Uplifter. Day-to-day sessions run on Spond. Here's where to go for what.</p>
+</div>
+<div style="flex: 1 1 480px; min-width: 0">
+<p style="font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5; color: #D5DEE6; max-width: 540px; margin: 0">Memberships and event registration run on Uplifter. Day-to-day sessions run on Spond. Here's where to go for what.</p>
 </div>
 
 <div style="flex: 0 1 440px; min-width: 280px; display: flex; flex-direction: column; gap: 14px">
